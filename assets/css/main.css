@@ -1127,7 +1127,7 @@ START: Theme Header CSS
 }
 
 .header-bottom {
-  border-bottom: 1px dashed #c9d1d1;
+  /* border-bottom: 1px dashed #c9d1d1; */
       background: linear-gradient(90deg, rgb(177 15 91 / 68%) 0%, rgb(125 9 119 / 88%) 50%, rgb(77 45 181 / 34%) 98%);
   border-radius: 12px 12px 0 0;
 }
@@ -1155,8 +1155,11 @@ START: Theme Header CSS
   display: inline-block;
   max-width: 136px;
   width: 100%;
+ 
 }
-
+.site_logo .logo img {
+   border-radius:12px;
+}
 .menu-area {
   gap: 25px;
 }
@@ -1498,7 +1501,7 @@ START: Theme Header CSS
   width: 50px;
   height: 50px;
   padding: 12px;
-  background: var(--tj-color-theme-primary);
+  background: #67299d;
   border-radius: 7px;
 }
 .menu_bar.mobile_menu_bar span {
@@ -1683,23 +1686,23 @@ START: Theme Footer CSS
 }
 .social-links.style-2 ul li a {
   background-color: var(--tj-color-common-white);
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 .social-links.style-2 ul li a i {
-  color: var(--tj-color-theme-primary);
+  color: #0b083e;
 }
 .social-links.style-2 ul li a:hover {
   opacity: 1;
 }
 .social-links.style-3 ul li a {
   background-color: var(--tj-color-common-white);
-  opacity: 0.3;
+  /* opacity: 0.3; */
 }
 .social-links.style-3 ul li a i {
   color: var(--tj-color-theme-dark);
 }
 .social-links.style-3 ul li a:hover {
-  background-color: var(--tj-color-theme-primary);
+  background-color: #00024e;
   opacity: 1;
 }
 .social-links.style-3 ul li a:hover i {
@@ -2354,6 +2357,7 @@ START: Theme Footer CSS
 
 .tj-footer-section.footer-3 {
   background-color: var(--tj-color-theme-dark);
+  background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
   position: relative;
   z-index: 1;
   padding-top: 0;
@@ -2512,7 +2516,7 @@ START: Theme Footer CSS
 }
 
 .tj-copyright-area-3 {
-  background-color: var(--tj-color-theme-primary);
+  background: #040038f7;
 }
 .tj-copyright-area-3 .copyright-content-area {
   -webkit-box-pack: center;
@@ -2807,6 +2811,7 @@ START: Theme Search CSS
 }
 .hamburger_bg {
   background-color: var(--tj-color-theme-dark);
+  background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -3856,7 +3861,7 @@ START: Back to top CSS
   height: 48px;
   font-size: 20px;
   color: var(--tj-color-common-white);
-  background-color: var(--tj-color-theme-primary);
+  background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 1px var(--tj-color-grey-1);
           box-shadow: 0 0 0 1px var(--tj-color-grey-1);
@@ -4307,6 +4312,281 @@ START: Animation  CSS
   background: currentColor;
 }
 
+/* From Uiverse.io by nima-mollazadeh */ 
+
+.time_parent {
+    margin-left: -200px;
+    margin-top: 2rem;
+}
+
+.time_parent .loader {
+  --dur: 2s;
+  display: block;
+  margin: auto;
+  width: 14em;
+  height: auto;
+}
+.time_parent .loader__glare-top,
+.time_parent .loader__glare-bottom,
+.time_parent .loader__model,
+.time_parent .loader__motion-thick,
+.time_parent .loader__motion-medium,
+.time_parent .loader__motion-thin,
+.time_parent .loader__sand-drop,
+.time_parent .loader__sand-fill,
+.time_parent .loader__sand-grain-left,
+.time_parent .loader__sand-grain-right,
+ .time_parent .loader__sand-line-left,
+.time_parent .loader__sand-line-right,
+.time_parent .loader__sand-mound-top,
+.time_parent .loader__sand-mound-bottom {
+  animation-duration: var(--dur);
+  animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  animation-iteration-count: infinite;
+}
+.time_parent .loader__glare-top {
+  animation-name: glare-top;
+}
+.time_parent .loader__glare-bottom {
+  animation-name: glare-bottom;
+}
+.time_parent .loader__model {
+  animation-name: loader-flip;
+  transform-origin: 12.25px 16.75px;
+}
+.time_parent .loader__motion-thick,
+.time_parent .loader__motion-medium,
+.time_parent .loader__motion-thin {
+  transform-origin: 26px 26px;
+}
+.time_parent .loader__motion-thick {
+  animation-name: motion-thick;
+}
+.time_parent .loader__motion-medium {
+  animation-name: motion-medium;
+}
+.time_parent .loader__motion-thin {
+  animation-name: motion-thin;
+}
+.time_parent .loader__sand-drop {
+  animation-name: sand-drop;
+}
+.time_parent .loader__sand-fill {
+  animation-name: sand-fill;
+}
+.time_parent .loader__sand-grain-left {
+  animation-name: sand-grain-left;
+}
+.time_parent .loader__sand-grain-right {
+  animation-name: sand-grain-right;
+}
+.time_parent .loader__sand-line-left {
+  animation-name: sand-line-left;
+}
+.time_parent .loader__sand-line-right {
+  animation-name: sand-line-right;
+}
+.time_parent .loader__sand-mound-top {
+  animation-name: sand-mound-top;
+}
+.time_parent .loader__sand-mound-bottom {
+  animation-name: sand-mound-bottom;
+  transform-origin: 12.25px 31.5px;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 90%, 10%);
+    --fg: hsl(var(--hue), 90%, 90%);
+  }
+}
+/* Animation */
+@keyframes loader-flip {
+  from {
+    transform: translate(13.75px, 9.25px) rotate(-180deg);
+  }
+  24%,
+  to {
+    transform: translate(13.75px, 9.25px) rotate(0);
+  }
+}
+@keyframes glare-top {
+  from {
+    stroke: rgba(255, 255, 255, 0);
+  }
+  24%,
+  to {
+    stroke: white;
+  }
+}
+@keyframes glare-bottom {
+  from {
+    stroke: white;
+  }
+  24%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes motion-thick {
+  from {
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(0.67turn);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+    stroke: rgb(32, 32, 32);
+    stroke-dashoffset: 141.11;
+    transform: rotate(1turn);
+  }
+  40%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(1.33turn);
+  }
+}
+@keyframes motion-medium {
+  from,
+  8% {
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(0.5turn);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+    stroke: white;
+    stroke-dashoffset: 147.53;
+    transform: rotate(0.83turn);
+  }
+  32%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(1.17turn);
+  }
+}
+@keyframes motion-thin {
+  from,
+  4% {
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(0.33turn);
+  }
+  24% {
+    animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+    stroke: rgb(53, 53, 53);
+    stroke-dashoffset: 134.7;
+    transform: rotate(0.67turn);
+  }
+  44%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(1turn);
+  }
+}
+@keyframes sand-drop {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 1;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -107;
+  }
+}
+@keyframes sand-fill {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 55;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -54;
+  }
+}
+@keyframes sand-grain-left {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 29;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+@keyframes sand-grain-right {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 27;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+@keyframes sand-line-left {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 53;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -55;
+  }
+}
+@keyframes sand-line-right {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 14;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -24.5;
+  }
+}
+@keyframes sand-mound-top {
+  from,
+  10% {
+    animation-timing-function: linear;
+    transform: translate(0, 0);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    transform: translate(0, 1.5px);
+  }
+  51%,
+  to {
+    transform: translate(0, 13px);
+  }
+}
+@keyframes sand-mound-bottom {
+  from,
+  31% {
+    animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    transform: scale(1, 0);
+  }
+  56%,
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
 .cb-cursor.-inverse {
   color: white;
 }
@@ -4374,6 +4654,15 @@ START: Heading CSS
 .sec_third .sec-heading .sec-title {
       color: white;
 }
+
+.tj-working-process .sec-heading .sec-title {
+  color: white;
+}
+
+.tj-working-process .heading-wrap-content .desc {
+  color: white;
+}
+
 .sec-heading .sec-title span {
   color: var(--tj-color-theme-primary);
 }
@@ -4439,8 +4728,11 @@ START: Heading CSS
     -webkit-text-fill-color: transparent;
 }
 .sec-heading.style-4 .sub-title {
-  color: var(--tj-color-theme-primary);
-  border-color: var(--tj-color-theme-primary);
+  /* color: var(--tj-color-theme-primary);
+  border-color: var(--tj-color-theme-primary); */
+      color: #ffffff;
+    border: none;
+    background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
 }
 .sec-heading.style-6 .sub-title {
   padding: 4px 8px;
@@ -5705,7 +5997,7 @@ START: Client CSS
   padding: 30px 5px;
   margin-top: 15px;
       /* background: linear-gradient(to right, #09062b, rgba(9, 6, 43, .3)), linear-gradient(to left, #040038, rgba(4, 0, 56, .3)); */
-  background: linear-gradient(90deg, rgba(158, 13, 81, 1) 0%, rgba(125, 9, 119, 1) 50%, rgba(77, 45, 181, 1) 98%);
+    background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-client-section-2 {
@@ -6053,6 +6345,7 @@ START: About CSS
 
 .box-area {
   background: var(--tj-color-grey-1);
+  background: #0b083e;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -7200,6 +7493,7 @@ START: Theme Marquee CSS
   padding-bottom: 37px;
   border-radius: 12px;
   overflow: hidden;
+  background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-marquee-section {
@@ -7360,9 +7654,12 @@ START: Project CSS
   }
 }
 .tj-project-section-3 .sub-title {
-  color: var(--tj-color-theme-primary);
+  /* color: var(--tj-color-theme-primary); */
   border: 0;
   padding: 0;
+      background: linear-gradient(90deg, rgb(201 25 108) 0%, rgb(173 115 170) 50%, rgb(137 101 255) 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .tj-project-section-3 .sec-title {
   color: var(--tj-color-common-white);
@@ -8356,6 +8653,11 @@ START: Testimonial CSS
   position: relative;
   z-index: 1;
 }
+
+.un_testi .testimonial-wrapper-2 {
+      background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
+}
+
 .testimonial-wrapper-2 .sec-title {
   max-width: 290px;
   width: 100%;
@@ -8370,7 +8672,7 @@ START: Testimonial CSS
   font-weight: var(--tj-fw-sbold);
 }
 .testimonial-wrapper-2 .sec-title span {
-  color: var(--tj-color-theme-primary);
+    color: #6f0248;
 }
 .testimonial-wrapper-2 .client-thumb {
   max-width: 270px;
@@ -8409,6 +8711,26 @@ START: Testimonial CSS
   font-size: 20px;
   line-height: 1;
 }
+
+.un_testi .testimonial-wrapper-2 .client-thumb .author-header .title{
+    color: white;
+}
+.un_testi .testimonial-wrapper-2 .client-thumb .author-header .designation{
+    color: white;
+}
+
+.un_testi .slider-next:hover, .un_testi .slider-prev:hover {
+      background-color: #c2c2c2;
+      border: none;
+}
+
+.un_testi .testimonial-wrapper-2 .swiper-pagination-bullet {
+          background-color: #ffffff;
+          border: 0px !important;
+}
+
+.un_testi .testimonial-wrapper-2 .client-thumb .author-header
+
 .testimonial-wrapper-2 .client-thumb .swiper-slide-active .thumb-img {
   border-color: var(--tj-color-theme-primary);
 }
@@ -8733,7 +9055,7 @@ START: Faq CSS
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #000000;
   opacity: 0.25;
 }
 .faq-img-area .box-area {
@@ -8751,8 +9073,10 @@ START: Faq CSS
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+              background: transparent;
 }
 .faq-img-area .box-area::after {
+      background: transparent;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -8772,6 +9096,7 @@ START: Faq CSS
 
 .call-box {
   background-color: var(--tj-color-theme-primary);
+  background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
   border-radius: 10px;
   padding: 25px 20px 30px;
 }
@@ -9576,12 +9901,14 @@ START: Working process CSS
 ----------------------------------------*/
 .tj-working-process {
   background-color: var(--tj-color-theme-bg);
+  background: #040038f7;
   position: relative;
   z-index: 1;
   border-radius: 12px;
+  margin: 15px;
 }
 .tj-working-process .sec-heading-wrap .sub-title {
-  color: var(--tj-color-theme-primary);
+  color: #0b083e;
   background-color: var(--tj-color-common-white);
   border: 0;
   padding: 7px 10px;
@@ -9618,7 +9945,7 @@ START: Working process CSS
   content: "\e916";
   font-size: 24px;
   line-height: 1;
-  color: var(--tj-color-theme-primary);
+  color: #882e68;
   font-family: "bexon-icons" !important;
   font-weight: normal;
   position: absolute;
@@ -9669,6 +9996,7 @@ START: Working process CSS
   color: var(--tj-color-theme-primary);
   background: -webkit-gradient(linear, left top, left bottom, from(var(--tj-color-theme-primary)), color-stop(90%, var(--tj-color-common-white)));
   background: linear-gradient(180deg, var(--tj-color-theme-primary) 0%, var(--tj-color-common-white) 90%);
+  background: linear-gradient(90deg, rgb(124 3 60 / 81%) 0%, rgb(94 0 89 / 85%) 50%, rgb(42 23 104 / 53%) 98%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -9678,6 +10006,7 @@ START: Working process CSS
   display: inline-flex;
   line-height: 1;
   margin-bottom: 16px;
+  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .process-item .process-step {
@@ -9849,6 +10178,8 @@ START: Contact CSS
 ----------------------------------------*/
 .tj-contact-section {
   background-color: var(--tj-color-theme-dark);
+  background: #040038f7;
+  margin: 15px;
   border-radius: 12px;
   position: relative;
   z-index: 1;
@@ -13957,8 +14288,9 @@ START: Choose CSS
   overflow: hidden;
 }
 .sec_third {
-      background: #040038f7;
-    margin: 15px 0;
+    background: #040038f7;
+    margin: 15px;
+    border-radius: 15px;
 }
 .tj-choose-section .sec-heading {
   max-width: 550px;
@@ -16347,6 +16679,7 @@ START: Theme Marquee CSS
   position: relative;
   overflow: hidden;
   padding: 70px 0;
+  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .h5-maquee {
@@ -16367,6 +16700,7 @@ START: Theme Marquee CSS
   width: 105%;
   -webkit-margin-start: -5px;
           margin-inline-start: -5px;
+              background: linear-gradient(90deg, rgba(158, 13, 81, 1) 0%, rgba(125, 9, 119, 1) 50%, rgba(77, 45, 181, 1) 98%);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .h5-maquee-inner {
@@ -16438,7 +16772,7 @@ START: Theme Marquee CSS
   }
 }
 .h5-maquee-inner-rtl {
-  background: var(--tj-color-common-white);
+  background: #040038f7;
   rotate: -4deg;
   position: absolute;
   inset-inline-start: 0;
@@ -16465,10 +16799,10 @@ START: Theme Marquee CSS
 .h5-maquee-inner-rtl .h5-maquee-slider-item .marquee-box .marquee-icon {
   -webkit-animation: rotateImg 6s infinite linear;
           animation: rotateImg 6s infinite linear;
-  color: var(--tj-color-theme-primary);
+  color: white;
 }
 .h5-maquee-inner-rtl .h5-maquee-slider-item .marquee-box .marquee-title .title {
-  color: var(--tj-color-theme-primary);
+  color: white;
 }
 
 @-webkit-keyframes rotateImg {
@@ -17433,10 +17767,12 @@ START: Service CSS
 /* START: Case Study CSS */
 .h6-project {
   background-color: var(--tj-color-theme-dark);
+  background: linear-gradient(90deg, rgb(124 3 60) 0%, rgb(94 0 89) 50%, rgb(42 23 104) 98%);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin: 15px;
 }
 .h6-project .heading-wrap-content {
   -webkit-box-align: end;
@@ -17444,7 +17780,8 @@ START: Service CSS
           align-items: flex-end;
 }
 .h6-project .sec-heading.style-2 .sub-title {
-  background-color: var(--tj-color-grey-3);
+      background-color: #fff;
+    color: #0b083e;
 }
 .h6-project .sec-heading.style-2 .sec-title {
   color: var(--tj-color-common-white);
@@ -24058,6 +24395,11 @@ START: Process CSS
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+@media screen and (min-width: 992px) and (max-width:1070px) {
+  .mainmenu ul > li > a {
+        font-size: 15px;
+  }
+} 
 @media (max-width: 575px) {
   .h10-project-button-group .active-bg {
     top: 4px;
@@ -24129,6 +24471,9 @@ START: Process CSS
   border-radius: 20px;
 }
 
+
+
+
 /* !END: Case Study CSS */
 /**----------------------------------------
 START: Testimonial CSS
@@ -24182,6 +24527,17 @@ START: Testimonial CSS
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .h10-testimonial-wrapper .star-ratings {
     margin-top: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 476px) {
+  .time_parent {
+    margin-left: 0;
+    transform: scale(.7);
+  }
+  .img-box {
+    display: none;
   }
 }
 

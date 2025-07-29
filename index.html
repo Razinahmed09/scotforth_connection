@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="en">
 
 <head>
@@ -58,24 +58,20 @@
   <div class="search-popup-overlay"></div>
   <!-- end: Search Popup -->
 
-  <!-- start: Offcanvas Menu -->
-  <div class="tj-offcanvas-area d-none d-lg-block">
+  <!-- start: Hamburger Menu -->
+  <div class="hamburger-area d-lg-none">
     <div class="hamburger_bg"></div>
     <div class="hamburger_wrapper">
       <div class="hamburger_inner">
         <div class="hamburger_top d-flex align-items-center justify-content-between">
           <div class="hamburger_logo">
             <a href="index.html" class="mobile_logo">
-              <img src="assets/images/logos/logo-2.webp" alt="Logo">
+              <img src="assets/images/logo2.png" alt="Logo" style="border-radius: 12px;">
             </a>
           </div>
           <div class="hamburger_close">
             <button class="hamburger_close_btn"><i class="fa-thin fa-times"></i></button>
           </div>
-        </div>
-        <div class="offcanvas-text">
-          <p>Developing personalize our customer journeys to increase satisfaction & loyalty of our expansion recognized
-            by industry leaders.</p>
         </div>
         <div class="hamburger-search-area">
           <h5 class="hamburger-title">Search Now!</h5>
@@ -86,57 +82,6 @@
             </form>
           </div>
         </div>
-        <div class="hamburger-infos">
-          <h5 class="hamburger-title">Contact Info</h5>
-          <div class="contact-info">
-            <div class="contact-item">
-              <span class="subtitle">Phone</span>
-              <a class="contact-link" href="tel:10095447818">+1 (009) 544-7818</a>
-            </div>
-            <div class="contact-item">
-              <span class="subtitle">Email</span>
-              <a class="contact-link" href="mailto:info@bexon.com">info@bexon.com</a>
-            </div>
-            <div class="contact-item">
-              <span class="subtitle">Location</span>
-              <span class="contact-link">993 Renner Burg, West Rond, MT 94251-030</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hamburger-socials">
-        <h5 class="hamburger-title">Follow Us</h5>
-        <div class="social-links style-3">
-          <ul>
-            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end: Offcanvas Menu -->
-
-  <!-- start: Hamburger Menu -->
-  <div class="hamburger-area d-lg-none">
-    <div class="hamburger_bg"></div>
-    <div class="hamburger_wrapper">
-      <div class="hamburger_inner">
-        <div class="hamburger_top d-flex align-items-center justify-content-between">
-          <div class="hamburger_logo">
-            <a href="index.html" class="mobile_logo">
-              <img src="assets/images/logos/logo-2.webp" alt="Logo">
-            </a>
-          </div>
-          <div class="hamburger_close">
-            <button class="hamburger_close_btn"><i class="fa-thin fa-times"></i></button>
-          </div>
-        </div>
         <div class="hamburger_menu">
           <div class="mobile_menu"></div>
         </div>
@@ -145,15 +90,15 @@
           <div class="contact-info">
             <div class="contact-item">
               <span class="subtitle">Phone</span>
-              <a class="contact-link" href="tel:8089091313">808-909-1313</a>
+              <a class="contact-link" href="tel:123456789">1-2345678910</a>
             </div>
             <div class="contact-item">
               <span class="subtitle">Email</span>
-              <a class="contact-link" href="mailto:info@bexon.com">info@bexon.com</a>
+              <a class="contact-link" href="mailto:dummy@example.com">dummy@example.com</a>
             </div>
             <div class="contact-item">
               <span class="subtitle">Location</span>
-              <span class="contact-link">993 Renner Burg, West Rond, MT 94251-030</span>
+              <span class="contact-link">Your Location Here ...</span>
             </div>
           </div>
         </div>
@@ -176,575 +121,66 @@
   </div>
   <!-- end: Hamburger Menu -->
 
-  <!-- start: Header Area -->
-  <header class="header-area header-1 section-gap-x">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="header-wrapper">
-            <!-- site logo -->
-            <div class="site_logo">
-              <a class="logo" href="index.html"><img src="assets/images/logos/logo.webp" alt=""></a>
-            </div>
+  <div id="navbar-container"></div>
+  <script>
+    fetch('navbar.html')
+      .then(Response => Response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data
+      })
 
-            <!-- navigation -->
-            <div class="menu-area d-none d-lg-inline-flex align-items-center">
-              <nav id="mobile-menu" class="mainmenu">
-                <ul>
-                  <li class="has-dropdown current-menu-ancestor"><a href="index.html">Home</a>
-                    <ul class="sub-menu">
-                      <li class="current-menu-item"><a href="index.html">Home One</a></li>
-                      <li><a href="index-2.html">Home Two</a></li>
-                      <li><a href="index-3.html">Home Three</a></li>
-                      <li><a href="index-4.html">Home Four</a></li>
-                      <li><a href="index-5.html">Home Five</a></li>
-                      <li><a href="index-6.html">Home Six</a></li>
-                      <li><a href="index-7.html">Home Seven</a></li>
-
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="about.html">Pages</a>
-                    <ul class="sub-menu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="team.html">Team</a></li>
-                      <li><a href="team-details.html">Team Details</a></li>
-                      <li><a href="faq.html">Faq</a></li>
-                      <li><a href="pricing.html">Pricing Page</a></li>
-                      <li><a href="error.html">Error 404</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="service.html">Services</a>
-                    <ul class="sub-menu">
-                      <li><a href="service.html">Services</a></li>
-                      <li><a href="service-details.html">Services Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="portfolio.html">Portfolio</a>
-                    <ul class="sub-menu">
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="blog.html">Blog</a>
-                    <ul class="sub-menu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            <!-- header right info -->
-            <div class="header-right-item d-none d-lg-inline-flex">
-              <div class="header-search">
-                <button class="search">
-                  <i class="tji-search"></i>
-                </button>
-                <button type="button" class="search_close_btn">
-                  <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-              </div>
-              <div class="header-button">
-                <a class="tj-primary-btn" href="contact.html">
-                  <span class="btn-text"><span>Let’s Talk</span></span>
-                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                </a>
-              </div>
-              <div class="menu_bar menu_offcanvas d-none d-lg-inline-flex">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-
-            <!-- menu bar -->
-            <div class="menu_bar mobile_menu_bar d-lg-none">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Search Popup -->
-    <div class="search_popup">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="tj_search_wrapper">
-              <div class="search_form">
-                <form action="#">
-                  <div class="search_input">
-                    <div class="search-box">
-                      <input class="search-form-input" type="text" placeholder="Type Words and Hit Enter" required="">
-                      <button type="submit">
-                        <i class="tji-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- end: Header Area -->
-
-  <!-- start: Header Area -->
-  <header class="header-area header-1 header-duplicate header-sticky  section-gap-x">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="header-wrapper">
-            <!-- site logo -->
-            <div class="site_logo">
-              <a class="logo" href="index.html"><img src="assets/images/logos/logo.webp" alt=""></a>
-            </div>
-
-            <!-- navigation -->
-            <div class="menu-area d-none d-lg-inline-flex align-items-center">
-              <nav class="mainmenu">
-                <ul>
-                  <li class="has-dropdown current-menu-ancestor"><a href="index.html">Home</a>
-                    <ul class="sub-menu">
-                      <li class="current-menu-item"><a href="index.html">Home One</a></li>
-                      <li><a href="index-2.html">Home Two</a></li>
-                      <li><a href="index-3.html">Home Three</a></li>
-                      <li><a href="index-4.html">Home Four</a></li>
-                      <li><a href="index-5.html">Home Five</a></li>
-                      <li><a href="index-6.html">Home Six</a></li>
-                      <li><a href="index-7.html">Home Seven</a></li>
-
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="about.html">Pages</a>
-                    <ul class="sub-menu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="team.html">Team</a></li>
-                      <li><a href="team-details.html">Team Details</a></li>
-                      <li><a href="faq.html">Faq</a></li>
-                      <li><a href="pricing.html">Pricing Page</a></li>
-                      <li><a href="error.html">Error 404</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="service.html">Services</a>
-                    <ul class="sub-menu">
-                      <li><a href="service.html">Services</a></li>
-                      <li><a href="service-details.html">Services Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="portfolio.html">Portfolio</a>
-                    <ul class="sub-menu">
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown"><a href="blog.html">Blog</a>
-                    <ul class="sub-menu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            <!-- header right info -->
-            <div class="header-right-item d-none d-lg-inline-flex">
-              <div class="header-search">
-                <button class="search">
-                  <i class="tji-search"></i>
-                </button>
-                <button type="button" class="search_close_btn">
-                  <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-              </div>
-              <div class="header-button">
-                <a class="tj-primary-btn" href="contact.html">
-                  <span class="btn-text"><span>Let’s Talk</span></span>
-                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                </a>
-              </div>
-              <div class="menu_bar menu_offcanvas d-none d-lg-inline-flex">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-
-            <!-- menu bar -->
-            <div class="menu_bar mobile_menu_bar d-lg-none">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Search Popup -->
-    <div class="search_popup">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="tj_search_wrapper">
-              <div class="search_form">
-                <form action="#">
-                  <div class="search_input">
-                    <div class="search-box">
-                      <input class="search-form-input" type="text" placeholder="Type Words and Hit Enter" required="">
-                      <button type="submit">
-                        <i class="tji-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- end: Header Area -->
+  </script>
 
   <main id="primary" class="site-main">
     <!-- start: Banner Section -->
-    <section class="tj-banner-section section-gap-x">
-      <div class="banner-area">
-        <div class="banner-left-box">
-          <div class="banner-content">
-            <span class="sub-title wow fadeInDown" data-wow-delay=".2s">
-              <i class="tji-excellence"></i> Recognized for Excellence
-            </span>
-            <h1 class="banner-title title-anim">Driving Excellence Through Evolution and
-              <span>Trust.</span>
-            </h1>
-            <div class="banner-desc-area wow fadeInUp" data-wow-delay=".7s">
-              <a class="banner-link" href="about.html">
-                <span><i class="tji-arrow-right-big"></i></span>
-              </a>
-              <div class="banner-desc">Represents growth, expansion, and modern
-                business solution present growth, expansion.
-              </div>
-            </div>
-          </div>
-          <div class="banner-shape">
-            <img src="assets/images/shape/pattern-bg.webp" alt="">
-          </div>
-        </div>
-        <div class="banner-right-box">
-          <div class="banner-img">
-            <img src="assets/images/hero/hero-img.webp" alt="">
-          </div>
-          <div class="box-area">
-            <div class="customers-box">
-              <div class="customers">
-                <ul>
-                  <li class="wow fadeInLeft" data-wow-delay=".5s"><img src="assets/images/testimonial/client-1.webp" alt=""></li>
-                  <li class="wow fadeInLeft" data-wow-delay=".6s"><img src="assets/images/testimonial/client-2.webp" alt=""></li>
-                  <li class="wow fadeInLeft" data-wow-delay=".7s"><img src="assets/images/testimonial/client-3.webp" alt=""></li>
-                  <li class="wow fadeInLeft" data-wow-delay=".8s"><span><i class="tji-plus"></i></span></li>
-                </ul>
-              </div>
-              <div class="customers-number wow fadeInUp" data-wow-delay=".5s">30K</div>
-              <h6 class="customers-text wow fadeInUp" data-wow-delay=".5s">Happy customer we have world-wide.</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="banner-scroll wow fadeInDown" data-wow-delay="2s">
-        <a href="#choose" class="scroll-down">
-          <span><i class="tji-arrow-down-long"></i></span>
-          Scroll Down
-        </a>
-      </div>
-    </section>
-    <!-- end: Banner Section -->
-
-    <!-- start: Choose Section -->
-    <section id="choose" class="tj-choose-section section-gap">
+    <section class="tj-banner-section-2 section-gap-x hero_sec">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="sec-heading text-center">
-              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Choose the Best</span>
-              <h2 class="sec-title title-anim">Empowering Business with <span>Expertise.</span></h2>
-            </div>
-          </div>
-        </div>
-        <div class="row row-gap-4 rightSwipeWrap">
-          <div class="col-lg-4">
-            <div class="choose-box right-swipe">
-              <div class="choose-content">
-                <div class="choose-icon">
-                  <i class="tji-innovative"></i>
-                </div>
-                <h4 class="title">Innovative Solutions</h4>
-                <p class="desc">We stay ahead of the curve, leveraging cutting-edge technologies and strategies to keep
-                  you competitive in a marketplace.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="choose-box right-swipe">
-              <div class="choose-content">
-                <div class="choose-icon">
-                  <i class="tji-award"></i>
-                </div>
-                <h4 class="title">Award-Winning Expertise</h4>
-                <p class="desc">Recognized by industry leaders, our award-winning team has a proven record of delivering
-                  excellence across projects.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="choose-box right-swipe">
-              <div class="choose-content">
-                <div class="choose-icon">
-                  <i class="tji-support"></i>
-                </div>
-                <h4 class="title">Dedicated Support</h4>
-                <p class="desc">Our team is always available to address your concerns, providing quick and effective
-                  solution to keep your business.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end: Choose Section -->
-
-    <!-- start: Client Section -->
-    <section class="tj-client-section client-section-gap wow fadeInUp" data-wow-delay=".4s">
-      <div class="container-fluid client-container">
-        <div class="row">
-          <div class="col-12">
-            <div class="client-content">
-              <h5 class="sec-title">Join Over <span class="client-numbers">1000+</span> Companies with
-                <span class="client-text">Bexon</span> Here
-              </h5>
-            </div>
-            <div class="swiper client-slider client-slider-1">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide client-item">
-                  <div class="client-logo">
-                    <img src="assets/images/brands/brand-1.webp" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide client-item">
-                  <div class="client-logo">
-                    <img src="assets/images/brands/brand-2.webp" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide client-item">
-                  <div class="client-logo">
-                    <img src="assets/images/brands/brand-3.webp" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide client-item">
-                  <div class="client-logo">
-                    <img src="assets/images/brands/brand-4.webp" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide client-item">
-                  <div class="client-logo">
-                    <img src="assets/images/brands/brand-5.webp" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide client-item">
-                  <div class="client-logo">
-                    <img src="assets/images/brands/brand-6.webp" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end: Client Section -->
-
-    <!-- start: About Section -->
-    <section class="tj-about-section section-gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
-            <div class="about-img-area wow fadeInLeft" data-wow-delay=".2s">
-              <div class="about-img">
-                <img src="assets/images/about/about-1.webp" alt="">
-              </div>
-              <div class="box-area">
-                <div class="experience-box wow fadeInUp" data-wow-delay=".3s">
-                  <span class="sub-title">Experiences</span>
-                  <div class="customers-number">13+</div>
-                  <h6 class="customers-text">Decades of Experience, Endless Innovation</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 order-lg-2 order-1">
-            <div class="about-content-area style-1 wow fadeInLeft" data-wow-delay=".2s">
-              <div class="sec-heading">
-                <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Get to Know Us</span>
-                <h2 class="sec-title title-anim">Empowering Businesses with Innovation,
-                  Expertise, and for <span>Success.</span>
-                </h2>
-              </div>
-              <div class="wow fadeInUp" data-wow-delay=".5s">
-                <a class="text-btn" href="about.html">
-                  <span class="btn-text"><span>Learn More</span></span>
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="banner-content-2">
+              <span class="sub-title wow fadeInUp" data-wow-delay=".2s">
+                <i class="tji-box"></i> Get to Know Us
+              </span>
+              <h1 class="banner-title title-anim">Scotforth Connection
+                <a class="title-video video-popup wow fadeInUp" data-wow-delay="1.3s" data-autoplay="true"
+                  data-vbtype="video" data-maxwidth="1200px"
+                  href="https://www.youtube.com/watch?v=MLpWrANjFbI&ab_channel=eidelchteinadvogados">
+                  <i class="tji-play"></i>
+                  <img src="assets/images/hero/title-img.webp" alt="">
+                </a>Flexible Expertise.
+              </h1>
+              <div class="btn-area wow fadeInUp" data-wow-delay=".8s">
+                <a class="tj-primary-btn" href="#">
+                  <span class="btn-text"><span>Find Out More</span></span>
                   <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                 </a>
-              </div>
-            </div>
-            <div class="about-bottom-area">
-              <div class="client-review-cont wow fadeInUp" data-wow-delay=".7s">
-                <div class="rating-area">
-                  <div class="star-ratings">
-                    <div class="fill-ratings" style="width: 100%">
-                      <span>★★★★★</span>
-                    </div>
-                    <div class="empty-ratings">
-                      <span>★★★★★</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="desc">We believe in building lasting relationships with our clients through trust, innovation,
-                  and
-                  exceptional service.</p>
-                <div class="client-info-area">
-                  <div class="client-info">
-                    <h6 class="title">Esther Howard</h6>
-                    <span class="designation">Co.Founder</span>
-                  </div>
-                  <span class="quote-icon"><i class="tji-quote"></i></span>
-                </div>
-              </div>
-              <div class="video-img wow fadeInUp" data-wow-delay=".9s">
-                <img src="assets/images/about/about-2.webp" alt="">
-                <a class="video-btn video-popup" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px" href="https://www.youtube.com/watch?v=MLpWrANjFbI&ab_channel=eidelchteinadvogados">
-                  <span><i class="tji-play"></i></span>
-                </a>
+                <a class="number" href="tel:123456789"><i class="tji-phone"></i><span>1-2345678910</span></a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- end: About Section -->
-
-    <!-- start: Service Section -->
-    <section class="tj-service-section overflow-hidden section-gap section-gap-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="sec-heading text-center">
-              <span class="sub-title text-white wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our
-                Solutions</span>
-              <h2 class="sec-title text-white title-anim">Solutions to Transform Your <span>Business.</span></h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid p-0">
-        <div class="row">
-          <div class="col-12">
-            <div class="service-wrapper wow fadeInUp" data-wow-delay=".4s">
-              <div class="swiper service-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="service-item style-1">
-                      <div class="service-img">
-                        <img src="assets/images/service/service-1.webp" alt="">
-                      </div>
-                      <div class="service-icon">
-                        <i class="tji-service-1"></i>
-                      </div>
-                      <div class="service-content">
-                        <h4 class="title"><a href="service-details.html">Business Strategy Development</a></h4>
-                        <p class="desc">Through a combination of data-driven insights and innovative approaches, we work
-                          closely with you to develop customized.</p>
-                        <a class="text-btn" href="service-details.html">
-                          <span class="btn-text"><span>Learn More</span></span>
-                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="service-item style-1">
-                      <div class="service-img">
-                        <img src="assets/images/service/service-5.webp" alt="">
-                      </div>
-                      <div class="service-icon">
-                        <i class="tji-service-2"></i>
-                      </div>
-                      <div class="service-content">
-                        <h4 class="title"><a href="service-details.html">Customer Experience Solutions</a></h4>
-                        <p class="desc">Developing personalized customer journeys to increase satisfaction and loyalty
-                          of our expansion to keep competitive.</p>
-                        <a class="text-btn" href="service-details.html">
-                          <span class="btn-text"><span>Learn More</span></span>
-                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="service-item style-1">
-                      <div class="service-img">
-                        <img src="assets/images/service/service-6.webp" alt="">
-                      </div>
-                      <div class="service-icon">
-                        <i class="tji-service-3"></i>
-                      </div>
-                      <div class="service-content">
-                        <h4 class="title"><a href="service-details.html">Sustainability and ESG Consulting</a></h4>
-                        <p class="desc">Provide tailored strategies that not only drive long-term value but also build
-                          trust with stakeholders, investors.</p>
-                        <a class="text-btn" href="service-details.html">
-                          <span class="btn-text"><span>Learn More</span></span>
-                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="service-item style-1">
-                      <div class="service-img">
-                        <img src="assets/images/service/service-7.webp" alt="">
-                      </div>
-                      <div class="service-icon">
-                        <i class="tji-service-4"></i>
-                      </div>
-                      <div class="service-content">
-                        <h4 class="title"><a href="service-details.html">Training and Development Programs</a></h4>
-                        <p class="desc">Training and Development Programs are designed to empower employees with the
-                          skills, knowledge, and tools they need.</p>
-                        <a class="text-btn" href="service-details.html">
-                          <span class="btn-text"><span>Learn More</span></span>
-                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                        </a>
-                      </div>
-                    </div>
+          <div class="col-lg-7">
+            <div class="banner-img-area wow fadeInUp" data-wow-delay=".3s">
+              <div class="banner-img">
+                <img src="assets/images/scotforth_images/hero_img.avif" alt="">
+                <!-- <span class="brand-name wow fadeIn" data-wow-delay="2.2s">Bexon</span> -->
+                <div class="brand-name wow fadeIn" data-wow-delay="2.2s">
+                  <div class="marquee-vr">
+                    <span class="text">Scotforth <span class="icon">/</span></span>
+                    <span class="text">Scotforth <span class="icon">/</span></span>
+                    <span class="text">Scotforth <span class="icon">/</span></span>
+                    <span class="text">Scotforth <span class="icon">/</span></span>
+                    <span class="text">Scotforth <span class="icon">/</span></span>
+                    <span class="text">Scotforth <span class="icon">/</span></span>
                   </div>
                 </div>
-                <div class="swiper-pagination-area white-pagination"></div>
+                <div class="growth-box wow fadeInUp" data-wow-delay="1.7s"><img src="assets/images/hero/growth.webp"
+                    alt=""></div>
+              </div>
+              <div class="wow fadeIn" data-wow-delay="2.2s">
+                <div class="banner-author">
+                  <h4 class="title">Connect. Collaborate.</h4>
+                  <span class="designation">Flexibility</span>
+                </div>
               </div>
             </div>
           </div>
@@ -756,147 +192,905 @@
       <div class="bg-shape-2">
         <img src="assets/images/shape/pattern-3.svg" alt="">
       </div>
+      <div class="banner-scroll wow fadeInDown" data-wow-delay="2.5s">
+        <a href="#choose" class="scroll-down">
+          <span><i class="tji-arrow-down-long"></i></span>
+          Scroll Down
+        </a>
+      </div>
+    </section>
+    <!-- end: Banner Section -->
+
+ <!-- start: Maquee Area -->
+    <section class="h5-maquee z-2">
+      <div class="h5-maquee-inner">
+        <div class="swiper h5-maquee-slider">
+          <div class="swiper-wrapper  h5-maquee-slider-wrapper">
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Innovation</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Success</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Leadership</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Enterprise</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Business Growth</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Corporate</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Results</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Innovation</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Success</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Leadership</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Enterprise</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Business Growth</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div dir="rtl" class="h5-maquee-inner h5-maquee-inner-rtl">
+        <div class="swiper h5-maquee-slider">
+          <div class="swiper-wrapper  h5-maquee-slider-wrapper">
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Innovation</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Success</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Leadership</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Enterprise</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Business Growth</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Corporate</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Results</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Innovation</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Success</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Leadership</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Enterprise</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h5-maquee-slider-item">
+              <div class="marquee-box">
+                <div class="marquee-icon-wrapper">
+                  <div class="marquee-icon"><i class="tji-star"></i></div>
+                </div>
+                <div class="marquee-title">
+                  <h4 class="title">Business Growth</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end: Maquee Area -->
+
+
+    <!-- start: About Section -->
+    <section class="tj-about-section h7-about section-gap section-gap-x mt-10 un_about">
+      <div class="container">
+        <div class="row row-gap-4">
+          <div class="col-12">
+            <div class="about-content-area-2 wow fadeInUp" data-wow-delay=".3s">
+              <div class="sec-heading style-2 style-7">
+                <div class="row">
+                  <div class="col-12 col-lg-4">
+                    <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Get to Know
+                      Us</span>
+                      <div class="time_parent">
+                          <!-- From Uiverse.io by nima-mollazadeh -->
+                          <svg
+                            aria-label="loader being flipped clockwise and circled by three white curves fading in and out"
+                            role="img" height="56px" width="56px" viewBox="0 0 56 56" class="loader">
+                            <clipPath id="sand-mound-top">
+                              <path
+                                d="M 14.613 13.087 C 15.814 12.059 19.3 8.039 20.3 6.539 C 21.5 4.789 21.5 2.039 21.5 2.039 L 3 2.039 C 3 2.039 3 4.789 4.2 6.539 C 5.2 8.039 8.686 12.059 9.887 13.087 C 11 14.039 12.25 14.039 12.25 14.039 C 12.25 14.039 13.5 14.039 14.613 13.087 Z"
+                                class="loader__sand-mound-top"></path>
+                            </clipPath>
+                            <clipPath id="sand-mound-bottom">
+                              <path
+                                d="M 14.613 20.452 C 15.814 21.48 19.3 25.5 20.3 27 C 21.5 28.75 21.5 31.5 21.5 31.5 L 3 31.5 C 3 31.5 3 28.75 4.2 27 C 5.2 25.5 8.686 21.48 9.887 20.452 C 11 19.5 12.25 19.5 12.25 19.5 C 12.25 19.5 13.5 19.5 14.613 20.452 Z"
+                                class="loader__sand-mound-bottom"></path>
+                            </clipPath>
+                            <g transform="translate(2,2)">
+                              <g transform="rotate(-90,26,26)" stroke-linecap="round" stroke-dashoffset="153.94"
+                                stroke-dasharray="153.94 153.94" stroke="hsl(0,0%,100%)" fill="none">
+                                <circle transform="rotate(0,26,26)" r="24.5" cy="26" cx="26" stroke-width="2.5"
+                                  class="loader__motion-thick"></circle>
+                                <circle transform="rotate(90,26,26)" r="24.5" cy="26" cx="26" stroke-width="1.75"
+                                  class="loader__motion-medium"></circle>
+                                <circle transform="rotate(180,26,26)" r="24.5" cy="26" cx="26" stroke-width="1"
+                                  class="loader__motion-thin"></circle>
+                              </g>
+                              <g transform="translate(13.75,9.25)" class="loader__model">
+                                <path
+                                  d="M 1.5 2 L 23 2 C 23 2 22.5 8.5 19 12 C 16 15.5 13.5 13.5 13.5 16.75 C 13.5 20 16 18 19 21.5 C 22.5 25 23 31.5 23 31.5 L 1.5 31.5 C 1.5 31.5 2 25 5.5 21.5 C 8.5 18 11 20 11 16.75 C 11 13.5 8.5 15.5 5.5 12 C 2 8.5 1.5 2 1.5 2 Z"
+                                  fill="hsl(var(--hue),90%,85%)"></path>
+
+                                <g stroke-linecap="round" stroke="hsl(35,90%,90%)">
+                                  <line y2="20.75" x2="12" y1="15.75" x1="12" stroke-dasharray="0.25 33.75"
+                                    stroke-width="1" class="loader__sand-grain-left"></line>
+                                  <line y2="21.75" x2="12.5" y1="16.75" x1="12.5" stroke-dasharray="0.25 33.75"
+                                    stroke-width="1" class="loader__sand-grain-right"></line>
+                                  <line y2="31.5" x2="12.25" y1="18" x1="12.25" stroke-dasharray="0.5 107.5"
+                                    stroke-width="1" class="loader__sand-drop"></line>
+                                  <line y2="31.5" x2="12.25" y1="14.75" x1="12.25" stroke-dasharray="54 54"
+                                    stroke-width="1.5" class="loader__sand-fill"></line>
+                                  <line y2="31.5" x2="12" y1="16" x1="12" stroke-dasharray="1 107" stroke-width="1"
+                                    stroke="hsl(35,90%,83%)" class="loader__sand-line-left"></line>
+                                  <line y2="31.5" x2="12.5" y1="16" x1="12.5" stroke-dasharray="12 96" stroke-width="1"
+                                    stroke="hsl(35,90%,83%)" class="loader__sand-line-right"></line>
+
+                                  <g stroke-width="0" fill="hsl(35,90%,90%)">
+                                    <path
+                                      d="M 12.25 15 L 15.392 13.486 C 21.737 11.168 22.5 2 22.5 2 L 2 2.013 C 2 2.013 2.753 11.046 9.009 13.438 L 12.25 15 Z"
+                                      clip-path="url(#sand-mound-top)"></path>
+                                    <path
+                                      d="M 12.25 18.5 L 15.392 20.014 C 21.737 22.332 22.5 31.5 22.5 31.5 L 2 31.487 C 2 31.487 2.753 22.454 9.009 20.062 Z"
+                                      clip-path="url(#sand-mound-bottom)"></path>
+                                  </g>
+                                </g>
+
+                                <g stroke-width="2" stroke-linecap="round" opacity="0.7" fill="none">
+                                  <path
+                                    d="M 19.437 3.421 C 19.437 3.421 19.671 6.454 17.914 8.846 C 16.157 11.238 14.5 11.5 14.5 11.5"
+                                    stroke="hsl(0,0%,100%)" class="loader__glare-top"></path>
+                                  <path transform="rotate(180,12.25,16.75)"
+                                    d="M 19.437 3.421 C 19.437 3.421 19.671 6.454 17.914 8.846 C 16.157 11.238 14.5 11.5 14.5 11.5"
+                                    stroke="hsla(0,0%,100%,0)" class="loader__glare-bottom"></path>
+                                </g>
+
+                                <rect height="2" width="24.5" fill="hsl(var(--hue),90%,50%)"></rect>
+                                <rect height="1" width="19.5" y="0.5" x="2.5" ry="0.5" rx="0.5"
+                                  fill="hsl(var(--hue),90%,57.5%)"></rect>
+                                <rect height="2" width="24.5" y="31.5" fill="hsl(var(--hue),90%,50%)"></rect>
+                                <rect height="1" width="19.5" y="32" x="2.5" ry="0.5" rx="0.5"
+                                  fill="hsl(var(--hue),90%,57.5%)"></rect>
+                              </g>
+                            </g>
+                          </svg>
+
+                        </div>
+                  </div>
+                  <div class="col-12 col-lg-8">
+                    <div class="h7-about-content-inner">
+                      <h2 class="sec-title title-highlight">Empowering Change Through Experience and Meaningful
+                        Collaboration
+                      </h2>
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <div class="h7-about-card">
+                            <div class="h7-about-card-content">
+                              <div class="h7-about-card-icon">
+                                <i class="tji-dart-board"></i>
+                              </div>
+                              <h4 class="title">Our Mission</h4>
+                              <p class="desc">To connect retired professionals in a flexible, supportive network—sharing
+                                expertise without commercial pressure through informal, collaborative solutions..</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="h7-about-card">
+                            <div class="h7-about-card-content">
+                              <div class="h7-about-card-icon">
+                                <i class="tji-eye-box"></i>
+                              </div>
+                              <h4 class="title">Our Vision</h4>
+                              <p class="desc">To redefine retirement by empowering professionals to stay active, share
+                                their wisdom, and make a meaningful impact—informally and collaboratively.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="about-btn-area-2 wow fadeInUp" data-wow-delay="1s">
+                        <a class="tj-primary-btn" href="#">
+                          <span class="btn-text"><span>Know More Us</span></span>
+                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                        </a>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid gap-15">
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <div class="h7-about-banner  wow fadeInUp" data-wow-delay=".2s">
+              <img src="assets/images/about/h7-about-banner.webp" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="row h7-about-counter-wrapper">
+              <div class="col-12 col-md-6">
+                <div class="countup-item style-2 wow fadeInUp" data-wow-delay=".3s">
+                  <p class="counter-title">Faster Growth</p>
+                  <h5 class="steps">01.</h5>
+                  <div class="count-inner">
+
+                    <div class="inline-content">
+                      <span class="odometer countup-number" data-count="8.5"></span>
+                      <span class="count-plus">X</span>
+                    </div>
+                    <span class="count-text">Built for Super Speed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 ">
+                <div data-bg-image="./assets/images/about/h7-about-item.webp" class="img-box style-2  wow fadeInUp"
+                  data-wow-delay=".4s">
+
+                </div>
+              </div>
+              <div class="col-12 col-md-6 ">
+                <div class="customers-box style-2  wow fadeInUp" data-wow-delay=".5s">
+                  <div class="customers-bg" data-bg-image="assets/images/about/h7-about-item-bg.webp"></div>
+
+                  <h6 class="customers-text wow fadeInLeft" data-wow-delay=".6s">Solving Real Problems with Real-World
+                    Experience</h6>
+                  <a class="text-btn wow fadeInLeft" data-wow-delay=".5s" href="#">
+                    <span class="btn-text"><span>Contact us</span></span>
+                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="countup-item style-2  wow fadeInUp" data-wow-delay=".6s">
+                  <p class="counter-title">Reach Worldwide</p>
+                  <h5 class="steps">02.</h5>
+                  <div class="count-inner">
+                    <div class="inline-content">
+                      <span class="odometer countup-number" data-count="20"></span>
+                      <span class="count-plus">M</span>
+                    </div>
+                    <span class="count-text">Corporate Service Holders</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="bg-shape-1">
+        <img src="assets/images/shape/pattern-2.svg" alt="">
+      </div>
+      <div class="bg-shape-2">
+        <img src="assets/images/shape/pattern-3.svg" alt="">
+      </div>
+    </section>
+    <!-- end: About Section -->
+
+    
+
+    <!-- start: Client Section -->
+    <section class="tj-client-section-2 section-gap-x wow fadeInUp" data-wow-delay=".4s">
+      <div class="container-fluid client-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper client-slider client-slider-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide client-item">
+                  <div class="client-logo">
+                    <img src="assets/images/brands/brand-1-light.webp" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide client-item">
+                  <div class="client-logo">
+                    <img src="assets/images/brands/brand-2-light.webp" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide client-item">
+                  <div class="client-logo">
+                    <img src="assets/images/brands/brand-3-light.webp" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide client-item">
+                  <div class="client-logo">
+                    <img src="assets/images/brands/brand-4-light.webp" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide client-item">
+                  <div class="client-logo">
+                    <img src="assets/images/brands/brand-5-light.webp" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide client-item">
+                  <div class="client-logo">
+                    <img src="assets/images/brands/brand-6-light.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Client Section -->
+
+    
+    <!-- start: Choose Section -->
+    <section id="choose" class="tj-choose-section section-gap sec_third">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sec-heading style-3 text-center">
+              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Choose the Best</span>
+              <h2 class="sec-title title-anim">Empowering Business with Expertise.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row row-gap-4 rightSwipeWrap">
+          <div class="col-xl-3 col-md-6">
+            <div class="choose-box style-2 right-swipe">
+              <div class="choose-content">
+                <div class="choose-icon">
+                  <i class="tji-innovative"></i>
+                </div>
+                <h4 class="title">Innovative Solutions</h4>
+                <p class="desc">We stay ahead of the leveraging cutting-edge technologies and strategies to keep.</p>
+                <a class="text-btn" href="#">
+                  <span class="btn-text"><span>Read More</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="choose-box style-2 right-swipe">
+              <div class="choose-content">
+                <div class="choose-icon">
+                  <i class="tji-award"></i>
+                </div>
+                <h4 class="title">Award-Winning</h4>
+                <p class="desc">Recognized by industry leaders, our award-winning team has a proven record.</p>
+                <a class="text-btn" href="#">
+                  <span class="btn-text"><span>Read More</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="choose-box style-2 right-swipe">
+              <div class="choose-content">
+                <div class="choose-icon">
+                  <i class="tji-team"></i>
+                </div>
+                <h4 class="title">Expert Team</h4>
+                <p class="desc">Our team is always available to address your concerns, providing quick and solution.</p>
+                <a class="text-btn" href="#">
+                  <span class="btn-text"><span>Read More</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="choose-box style-2 right-swipe">
+              <div class="choose-content">
+                <div class="choose-icon">
+                  <i class="tji-support"></i>
+                </div>
+                <h4 class="title">Dedicated Support</h4>
+                <p class="desc">Our team is always available to address your concerns, providing quick and effective.
+                </p>
+                <a class="text-btn" href="#">
+                  <span class="btn-text"><span>Read More</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Choose Section -->
+
+    <!-- start: About Section -->
+    <!-- <section class="tj-about-section-2 section-gap section-gap-x ">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
+            <div class="about-img-area style-2 wow fadeInLeft" data-wow-delay=".3s">
+              <div class="about-img">
+                <img src="assets/images/about/about-5.webp" alt="">
+              </div>
+              <div class="box-area">
+                <div class="progress-box wow fadeInUp" data-wow-delay=".3s">
+                  <h4 class="title">Business Progress</h4>
+                  <ul class="tj-progress-list">
+                    <li>
+                      <h6 class="tj-progress-title">Revenue</h6>
+                      <div class="tj-progress">
+                        <span class="tj-progress-percent">82%</span>
+                        <div class="tj-progress-bar" data-percent="82">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <h6 class="tj-progress-title">Satisfaction</h6>
+                      <div class="tj-progress">
+                        <span class="tj-progress-percent">90%</span>
+                        <div class="tj-progress-bar" data-percent="90">
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 order-lg-2 order-1">
+            <div class="about-content-area">
+              <div class="sec-heading style-3">
+                <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Get to Know Us</span>
+                <h2 class="sec-title title-anim">Driving Innovation and Excellence for Sustainable Corporate Success
+                  Worldwide.
+                </h2>
+              </div>
+            </div>
+            <div class="about-bottom-area">
+              <div class="mission-vision-box wow fadeInLeft" data-wow-delay=".5s">
+                <h4 class="title">Our Mission</h4>
+                <p class="desc">our mission is empower businesses through innovate best solution, exceptional service.
+                </p>
+                <ul class="list-items">
+                  <li><i class="tji-list"></i>Innovation & Excellence</li>
+                  <li><i class="tji-list"></i>Exceptional Customer</li>
+                  <li><i class="tji-list"></i>Business Growth</li>
+                </ul>
+              </div>
+              <div class="mission-vision-box wow fadeInRight" data-wow-delay=".5s">
+                <h4 class="title">Our Vision</h4>
+                <p class="desc">Our vision is to become a global leader in providing transformative business solutions.
+                </p>
+                <ul class="list-items">
+                  <li><i class="tji-list"></i>Global Leadership</li>
+                  <li><i class="tji-list"></i>Transformative Impact</li>
+                  <li><i class="tji-list"></i>Sustainable Success</li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-btn-area wow fadeInUp" data-wow-delay=".5s">
+              <a class="tj-primary-btn" href="#">
+                <span class="btn-text"><span>Learn More About Us</span></span>
+                <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-shape-1">
+        <img src="assets/images/shape/pattern-2.svg" alt="">
+      </div>
+      <div class="bg-shape-2">
+        <img src="assets/images/shape/pattern-3.svg" alt="">
+      </div>
+    </section> -->
+    <!-- end: About Section -->
+
+    <!-- start: Service Section -->
+    <section class="tj-service-section service-3 section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="sec-heading style-3 text-center">
+              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Solutions</span>
+              <h2 class="sec-title title-anim">Tailor Business Solutions for Corporates.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="service-wrapper">
+              <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                <div class="service-content-wrap">
+                  <div class="service-title">
+                    <div class="service-icon">
+                      <i class="tji-service-1"></i>
+                    </div>
+                    <h4 class="title"><a href="#">Non-Profit. Purpose-Driven. People-Focused.</a></h4>
+                  </div>
+                  <div class="service-content">
+                    <p class="desc">Scotforth connects retired professionals with those seeking flexible, expert
+                      support—offered at cost and guided by purpose, not profit.</p>
+                  </div>
+                </div>
+                <div class="service-reveal-bg" data-bg-image="assets/images/service/service-2.webp"></div>
+              </div>
+              <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                <div class="service-content-wrap">
+                  <div class="service-title">
+                    <div class="service-icon">
+                      <i class="tji-service-2"></i>
+                    </div>
+                    <h4 class="title"><a href="#">Experience-Led Strategy Guidance</a></h4>
+                  </div>
+                  <div class="service-content">
+                    <p class="desc">Our members bring decades of strategic expertise to help you explore fresh,
+                      practical approaches to personal, business, or organisational challenges—using insight, not
+                      overhead.</p>
+                  </div>
+                </div>
+                <div class="service-reveal-bg" data-bg-image="assets/images/service/service-3.webp"></div>
+              </div>
+              <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                <div class="service-content-wrap">
+                  <div class="service-title">
+                    <div class="service-icon">
+                      <i class="tji-service-3"></i>
+                    </div>
+                    <h4 class="title"><a href="#">Client-Centered Collaboration</a></h4>
+                  </div>
+                  <div class="service-content">
+                    <p class="desc">We focus on enhancing every part of your journey, offering flexible support shaped
+                      around your evolving goals and needs—not rigid structures.</p>
+                  </div>
+                </div>
+                <div class="service-reveal-bg" data-bg-image="assets/images/service/service-4.webp"></div>
+              </div>
+              <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                <div class="service-content-wrap">
+                  <div class="service-title">
+                    <div class="service-icon">
+                      <i class="tji-service-4"></i>
+                    </div>
+                    <h4 class="title"><a href="#">Sustainable Thinking & Ethical Advice</a></h4>
+                  </div>
+                  <div class="service-content">
+                    <p class="desc">Our professionals advise on forward-thinking, values-driven strategies that create
+                      long-term value and foster trust—grounded in experience and integrity</p>
+                  </div>
+                </div>
+                <div class="service-reveal-bg" data-bg-image="assets/images/service/service-6.webp"></div>
+              </div>
+            </div>
+            <div class="service-btn-area text-center wow fadeInUp" data-wow-delay=".3s">
+              <a class="tj-primary-btn" href="#">
+                <span class="btn-text"><span>More Services</span></span>
+                <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end: Service Section -->
 
+
+        <!-- start: Project Section -->
+    <section class="h6-project section-gap section-gap-x">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="heading-wrap-content">
+              <div class="sec-heading style-2 style-6">
+                <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Works</span>
+                <h2 class="sec-title title-anim">Our Way of Working</h2>
+              </div>
+              <div class="btn-area wow fadeInUp" data-wow-delay=".8s">
+                <a class="tj-primary-btn" href="#">
+                  <span class="btn-text"><span>Explore More</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="h6-project-inner wow fadeInUp" data-wow-delay="0.6s">
+              <div class=" project-item h6-project-item ">
+                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/about/about-5.webp">
+                  <div class="project-content">
+                    <span class="categories"><a href="#">Connect</a></span>
+                    <div class="project-text">
+                      <h3 class="title"><a href="#">Human Connections, Not Corporate Transactions</a></h3>
+                      <a class="project-btn" href="#">
+                        <i class="tji-arrow-right-long"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" project-item h6-project-item ">
+                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/about/un-about.png">
+                  <div class="project-content">
+                    <span class="categories"><a href="#">Empower</a></span>
+                    <div class="project-text">
+                      <h3 class="title"><a href="#">Personal Introductions, Not Pipelines</a></h3>
+                      <a class="project-btn" href="#">
+                        <i class="tji-arrow-right-long"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" project-item h6-project-item active">
+                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/about/un-about-2.png">
+                  <div class="project-content">
+                    <span class="categories"><a href="#">Support</a></span>
+                    <div class="project-text">
+                      <h3 class="title"><a href="#">Services at Cost, Not for Profit</a></h3>
+                      <a class="project-btn" href="#">
+                        <i class="tji-arrow-right-long"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" project-item h6-project-item ">
+                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/about/un-about-3.png">
+                  <div class="project-content">
+                    <span class="categories"><a href="#">Business</a></span>
+                    <div class="project-text">
+                      <h3 class="title"><a href="#">Flexible Ways of Working</a></h3>
+                      <a class="project-btn" href="#">
+                        <i class="tji-arrow-right-long"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" project-item h6-project-item ">
+                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/about/un-about-4.png">
+                  <div class="project-content">
+                    <span class="categories"><a href="#">Connect</a></span>
+                    <div class="project-text">
+                      <h3 class="title"><a href="#">Conversations Before Commitments</a></h3>
+                      <a class="project-btn" href="#">
+                        <i class="tji-arrow-right-long"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" project-item h6-project-item ">
+                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/about/un-about-5.png">
+                  <div class="project-content">
+                    <span class="categories"><a href="#">Empower</a></span>
+                    <div class="project-text">
+                      <h3 class="title"><a href="#">Trust-Based, Creative Collaboration</a></h3>
+                      <a class="project-btn" href="#">
+                        <i class="tji-arrow-right-long"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-shape-1">
+        <img src="assets/images/shape/pattern-2.svg" alt="">
+      </div>
+      <div class="bg-shape-2">
+        <img src="assets/images/shape/pattern-3.svg" alt="">
+      </div>
+      <div class="bg-shape-3">
+        <img src="assets/images/shape/shape-blur.svg" alt="">
+      </div>
+    </section>
+    <!-- end: Project Section -->
+
+
     <!-- start: Project Section -->
-    <section class="tj-project-section section-gap">
+    <section class="tj-project-section-3 section-gap section-gap-x sec4_project">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="sec-heading-wrap">
               <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Proud Projects</span>
               <div class="heading-wrap-content">
-                <div class="sec-heading">
-                  <h2 class="sec-title title-anim">Breaking Boundaries, Building <span>Dreams.</span></h2>
+                <div class="sec-heading style-3">
+                  <h2 class="sec-title title-anim">Meaningful Missions Sharing Wisdom, Solving Problems.</h2>
                 </div>
-                <p class="desc wow fadeInUp" data-wow-delay=".5s">We work closely with our clients to understand their
-                  unique needs and craft tailored
-                  solutions that address challenges.</p>
-                <div class="btn-wrap wow fadeInUp" data-wow-delay=".6s">
-                  <a class="tj-primary-btn" href="portfolio.html">
-                    <span class="btn-text"><span>More Projects</span></span>
-                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="project-area">
-              <div class="project-item wow fadeInLeft" data-wow-delay=".3s">
-                <div class="project-img" data-bg-image="assets/images/project/project-1.webp"></div>
-                <div class="project-content">
-                  <span class="categories"><a href="portfolio-details.html">Connect</a></span>
-                  <div class="project-text">
-                    <h4 class="title"><a href="portfolio-details.html">Event Management Platform</a></h4>
-                    <a class="project-btn" href="portfolio-details.html">
-                      <i class="tji-arrow-right-long"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="project-item wow fadeInRight" data-wow-delay=".3s">
-                <div class="project-img" data-bg-image="assets/images/project/project-2.webp"></div>
-                <div class="project-content">
-                  <span class="categories"><a href="portfolio-details.html">Empower</a></span>
-                  <div class="project-text">
-                    <h4 class="title"><a href="portfolio-details.html">Digital Marketing Campaign</a></h4>
-                    <a class="project-btn" href="portfolio-details.html">
-                      <i class="tji-arrow-right-long"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="project-item wow fadeInLeft" data-wow-delay=".3s">
-                <div class="project-img" data-bg-image="assets/images/project/project-3.webp"></div>
-                <div class="project-content">
-                  <span class="categories"><a href="portfolio-details.html">Support</a></span>
-                  <div class="project-text">
-                    <h4 class="title"><a href="portfolio-details.html">Interactive Learning Platform</a></h4>
-                    <a class="project-btn" href="portfolio-details.html">
-                      <i class="tji-arrow-right-long"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="project-item wow fadeInRight" data-wow-delay=".3s">
-                <div class="project-img" data-bg-image="assets/images/project/project-4.webp"></div>
-                <div class="project-content">
-                  <span class="categories"><a href="portfolio-details.html">Business</a></span>
-                  <div class="project-text">
-                    <h4 class="title"><a href="portfolio-details.html">Environmental Impact Dashboard</a></h4>
-                    <a class="project-btn" href="portfolio-details.html">
-                      <i class="tji-arrow-right-long"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end: Project Section -->
-
-    <!-- start: Countup Section -->
-    <div class="tj-countup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="countup-wrap">
-              <div class="countup-item">
-                <div class="inline-content">
-                  <span class="odometer countup-number" data-count="93"></span>
-                  <span class="count-plus">%</span>
-                </div>
-                <span class="count-text">Projects Completed.</span>
-                <span class="count-separator" data-bg-image="assets/images/shape/separator.svg"></span>
-              </div>
-              <div class="countup-item">
-                <div class="inline-content">
-                  <span class="odometer countup-number" data-count="20"></span>
-                  <span class="count-plus">M</span>
-                </div>
-                <span class="count-text">Reach Worldwide</span>
-                <span class="count-separator" data-bg-image="assets/images/shape/separator.svg"></span>
-              </div>
-              <div class="countup-item">
-                <div class="inline-content">
-                  <span class="odometer countup-number" data-count="8.5"></span>
-                  <span class="count-plus">X</span>
-                </div>
-                <span class="count-text">Faster Growth</span>
-                <span class="count-separator" data-bg-image="assets/images/shape/separator.svg"></span>
-              </div>
-              <div class="countup-item">
-                <div class="inline-content">
-                  <span class="odometer countup-number" data-count="100"></span>
-                  <span class="count-plus">+</span>
-                </div>
-                <span class="count-text">Awards Archived</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end: Countup Section -->
-
-    <!-- start: Testimonial Section -->
-    <section class="tj-testimonial-section section-gap section-gap-x">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-12">
-            <div class="sec-heading-wrap">
-              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Clients Feedback</span>
-              <div class="heading-wrap-content">
-                <div class="sec-heading">
-                  <h2 class="sec-title title-anim">Success <span>Stories</span> Fuel our Innovation.</h2>
-                </div>
-                <div class="slider-navigation d-inline-flex wow fadeInUp" data-wow-delay=".4s">
+                <div class="slider-navigation d-none d-md-inline-flex wow fadeInUp" data-wow-delay=".5s">
                   <div class="slider-prev">
                     <span class="anim-icon">
                       <i class="tji-arrow-left"></i>
@@ -914,72 +1108,73 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="testimonial-wrapper wow fadeInUp" data-wow-delay=".5s">
-              <div class="swiper swiper-container testimonial-slider">
+            <div class="project-wrapper wow fadeInUp" data-wow-delay=".4s">
+              <div class="swiper project-slider-2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <span class="quote-icon"><i class="tji-quote"></i></span>
-                      <div class="desc">
-                        <p>Working with Bexon has been a game-changer for our business. Their team's professionalism,
-                          attention to detail, and innovative solutions have helped us streamline operations and achieve
-                          our goals faster than we imagined. We truly feel like a valued partner.</p>
+                    <div class="project-item">
+                      <div class="project-img">
+                        <img src="assets/images/project/project-6.webp" alt="">
                       </div>
-                      <div class="testimonial-author">
-                        <div class="author-inner">
-                          <div class="author-img">
-                            <img src="assets/images/testimonial/client-1.webp" alt="">
-                          </div>
-                          <div class="author-header">
-                            <h4 class="title">Guy Hawkins</h4>
-                            <span class="designation">Co. Founder</span>
-                          </div>
+                      <div class="project-content">
+                        <span class="categories"><a href="#">Business</a></span>
+                        <div class="project-text">
+                          <h4 class="title"><a href="#">Event Management Platform</a></h4>
+                          <a class="project-btn" href="#">
+                            <i class="tji-arrow-right-big"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <span class="quote-icon"><i class="tji-quote"></i></span>
-                      <div class="desc">
-                        <p>The results we’ve seen after partnering with Bexon are beyond our expectations. They not only
-                          understood our vision but also brought new ideas to the table that have taken our business to
-                          the next level. Their expertise and commitment to success make them a trusted.
-                        </p>
+                    <div class="project-item">
+                      <div class="project-img">
+                        <img src="assets/images/project/project-7.webp" alt="">
                       </div>
-                      <div class="testimonial-author">
-                        <div class="author-inner">
-                          <div class="author-img">
-                            <img src="assets/images/testimonial/client-2.webp" alt="">
-                          </div>
-                          <div class="author-header">
-                            <h4 class="title">Ralph Edwards</h4>
-                            <span class="designation">Co. Founder</span>
-                          </div>
+                      <div class="project-content">
+                        <span class="categories"><a href="#">Business</a></span>
+                        <div class="project-text">
+                          <h4 class="title"><a href="#">Rebranding Strategy for a Growing</a></h4>
+                          <a class="project-btn" href="#">
+                            <i class="tji-arrow-right-big"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <span class="quote-icon"><i class="tji-quote"></i></span>
-                      <div class="desc">
-                        <p>We’ve been working with Bexonfor years, and they continue to deliver outstanding results.
-                          Their team is proactive, responsive, and always goes the extra mile to ensure our needs are
-                          met. They’ve become a key contributor to our growth and success that really help us"
-                        </p>
+                    <div class="project-item">
+                      <div class="project-img">
+                        <img src="assets/images/project/project-8.webp" alt="">
                       </div>
-                      <div class="testimonial-author">
-                        <div class="author-inner">
-                          <div class="author-img">
-                            <img src="assets/images/testimonial/client-3.webp" alt="">
-                          </div>
-                          <div class="author-header">
-                            <h4 class="title">Devon Lane</h4>
-                            <span class="designation">Co. Founder</span>
-                          </div>
+                      <div class="project-content">
+                        <span class="categories"><a href="#">Business</a></span>
+                        <div class="project-text">
+                          <h4 class="title"><a href="#">Interactive Learning Platform</a></h4>
+                          <a class="project-btn" href="#">
+                            <i class="tji-arrow-right-big"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="project-item">
+                      <div class="project-img">
+                        <img src="assets/images/project/project-9.webp" alt="">
+                      </div>
+                      <div class="project-content">
+                        <span class="categories"><a href="#">Business</a></span>
+                        <div class="project-text">
+                          <h4 class="title"><a href="#">Connection Impact Overview</a></h4>
+                          <a class="project-btn" href="#">
+                            <i class="tji-arrow-right-big"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -997,77 +1192,294 @@
       <div class="bg-shape-2">
         <img src="assets/images/shape/pattern-3.svg" alt="">
       </div>
+      <div class="bg-shape-3">
+        <img src="assets/images/shape/shape-blur.svg" alt="">
+      </div>
+    </section>
+    <!-- end: Project Section -->
+
+    <!-- start: Testimonial Section -->
+    <section class="tj-testimonial-section-3 section-gap un_testi">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="testimonial-wrapper-2 wow fadeInUp" data-wow-delay=".4s">
+              <h5 class="sec-title">Our Clients Love <span>Feedback</span></h5>
+              <div class="swiper client-thumb">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide thumb-item">
+                    <div class="thumb-img">
+                      <img src="assets/images/testimonial/client-1.webp" alt="Image">
+                    </div>
+                    <div class="author-header">
+                      <h4 class="title">Mevon Lane</h4>
+                      <span class="designation">Co. Founder</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide thumb-item">
+                    <div class="thumb-img">
+                      <img src="assets/images/testimonial/client-2.webp" alt="Image">
+                    </div>
+                    <div class="author-header">
+                      <h4 class="title">Ralph Edwards</h4>
+                      <span class="designation">Co. Founder</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide thumb-item">
+                    <div class="thumb-img">
+                      <img src="assets/images/testimonial/client-3.webp" alt="Image">
+                    </div>
+                    <div class="author-header">
+                      <h4 class="title">Guy Hawkins</h4>
+                      <span class="designation">Co. Founder</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-navigation d-none d-md-inline-flex">
+                <div class="slider-prev">
+                  <span class="anim-icon">
+                    <i class="tji-arrow-left"></i>
+                    <i class="tji-arrow-left"></i>
+                  </span>
+                </div>
+                <div class="slider-next">
+                  <span class="anim-icon">
+                    <i class="tji-arrow-right"></i>
+                    <i class="tji-arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper testimonial-slider-3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="desc">
+                        <p>The insight, experience, and down-to-earth approach of their members helped us explore new ways of thinking and tackle challenges we’d been stuck on for months. Their informal yet highly professional support made us feel like collaborators, not clients. We’ve seen meaningful progress thanks to their practical wisdom and flexible mindset.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="desc">
+                        <p>They quickly grasped our goals and brought fresh, thoughtful perspectives that helped move things forward in ways we hadn’t considered. Their depth of experience and genuine commitment to helping others make them a trusted and invaluable ally.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="desc">
+                        <p>Their members are proactive, thoughtful, and genuinely committed to helping us move forward. They take the time to understand our needs and always go the extra mile. Their support has become a valuable part of our progress and problem-solving journey.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination-area"></div>
+              </div>
+              <span class="quote-icon"><i class="tji-quote"></i></span>
+              <div class="bg-shape-1">
+                <img src="assets/images/shape/pattern-2.svg" alt="">
+              </div>
+              <div class="bg-shape-2">
+                <img src="assets/images/shape/pattern-3.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end: Testimonial Section -->
 
-    <!-- start: Faq Section -->
-    <section class="tj-faq-section section-gap">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-6">
-            <div class="faq-img-area wow fadeInLeft" data-wow-delay=".3s">
-              <div class="faq-img">
-                <img src="assets/images/faq/faq.webp" alt="">
-                <h2 class="title title-anim">Need Help? Start Here...</h2>
+    <!-- start: Marquee Section -->
+    <section class="tj-marquee-section section-gap-x">
+      <div class="marquee-wrapper">
+        <div class="swiper marquee-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide marquee-item">
+              <h4 class="marquee-text">Growth</h4>
+              <div class="marquee-img">
+                <img src="assets/images/marquee/marquee-1.webp" alt="">
               </div>
-              <div class="box-area">
-                <div class="call-box wow fadeInUp" data-wow-delay=".4s">
-                  <h4 class="title">Get Started Free Call? </h4>
-                  <span class="call-icon"><i class="tji-phone"></i></span>
-                  <a class="number" href="tel:18884521505"><span>1-888-452-1505</span></a>
+            </div>
+            <div class="swiper-slide marquee-item">
+              <h4 class="marquee-text">Leadership</h4>
+              <div class="marquee-img">
+                <img src="assets/images/marquee/marquee-2.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide marquee-item">
+              <h4 class="marquee-text">Enterprise</h4>
+              <div class="marquee-img">
+                <img src="assets/images/marquee/marquee-1.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide marquee-item">
+              <h4 class="marquee-text">Leadership</h4>
+              <div class="marquee-img">
+                <img src="assets/images/marquee/marquee-2.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide marquee-item">
+              <h4 class="marquee-text">Enterprise</h4>
+              <div class="marquee-img">
+                <img src="assets/images/marquee/marquee-1.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide marquee-item">
+              <h4 class="marquee-text">Leadership</h4>
+              <div class="marquee-img">
+                <img src="assets/images/marquee/marquee-2.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Marquee Section -->
+
+    <!-- start: Team Section -->
+    <section class="tj-team-section-2 section-gap d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sec-heading-wrap">
+              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Meet Our Team</span>
+              <div class="heading-wrap-content">
+                <div class="sec-heading style-3">
+                  <h2 class="sec-title title-anim">People Behind Bexon.</h2>
+                </div>
+                <div class="btn-wrap wow fadeInUp" data-wow-delay=".5s">
+                  <a class="tj-primary-btn" href="team.html">
+                    <span class="btn-text"><span>More Members</span></span>
+                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="accordion tj-faq" id="faqOne">
-              <div class="accordion-item active wow fadeInUp" data-wow-delay=".3s">
-                <button class=" faq-title" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true">What services does Bexon offer to clients?</button>
-                <div id="faq-1" class="collapse show" data-bs-parent="#faqOne">
-                  <div class="accordion-body faq-text">
-                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
-                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
-                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
-                  </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="team-wrapper">
+              <div class="team-img-wrap wow fadeInUp" data-wow-delay=".5s">
+                <div id="team-img" class="team-img">
+                  <img src="assets/images/team/team-1-big.webp" alt="Images">
                 </div>
               </div>
-              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false">How do I get started with Corporate Business?</button>
-                <div id="faq-2" class="collapse" data-bs-parent="#faqOne">
-                  <div class="accordion-body faq-text">
-                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
-                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
-                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+              <div class="team-item-wrap">
+                <div class="team-item active wow fadeInUp" data-wow-delay=".3s"
+                  data-src="assets/images/team/team-1-big.webp">
+                  <div class="team-item-inner">
+                    <div class="team-content">
+                      <h3 class="title"><a href="team-details.html">Eade Marren</a></h3>
+                      <span class="designation">Chief Executive</span>
+                    </div>
+                    <div class="social-links">
+                      <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                              class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i
+                              class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="team-link" href="team-details.html"><i class="tji-arrow-right-long"></i></a>
+                  </div>
+                  <div class="team-img-wrap">
+                    <div class="team-img">
+                      <img src="assets/images/team/team-1-big.webp" alt="Images">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false">How do you ensure the success of a project?</button>
-                <div id="faq-3" class="collapse" data-bs-parent="#faqOne">
-                  <div class="accordion-body faq-text">
-                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
-                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
-                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                <div class="team-item wow fadeInUp" data-wow-delay=".3s" data-src="assets/images/team/team-2-big.webp">
+                  <div class="team-item-inner">
+                    <div class="team-content">
+                      <h3 class="title"><a href="team-details.html">Savannah Ngueen</a></h3>
+                      <span class="designation">Operations Head</span>
+                    </div>
+                    <div class="social-links">
+                      <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                              class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i
+                              class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="team-link" href="team-details.html"><i class="tji-arrow-right-long"></i></a>
+                  </div>
+                  <div class="team-img-wrap">
+                    <div class="team-img">
+                      <img src="assets/images/team/team-2-big.webp" alt="Images">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false">How long will it take to complete my project?</button>
-                <div id="faq-4" class="collapse" data-bs-parent="#faqOne">
-                  <div class="accordion-body faq-text">
-                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
-                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
-                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                <div class="team-item wow fadeInUp" data-wow-delay=".3s" data-src="assets/images/team/team-3-big.webp">
+                  <div class="team-item-inner">
+                    <div class="team-content">
+                      <h3 class="title"><a href="team-details.html">Kristin Watson</a></h3>
+                      <span class="designation">Marketing Lead</span>
+                    </div>
+                    <div class="social-links">
+                      <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                              class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i
+                              class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="team-link" href="team-details.html"><i class="tji-arrow-right-long"></i></a>
+                  </div>
+                  <div class="team-img-wrap">
+                    <div class="team-img">
+                      <img src="assets/images/team/team-3-big.webp" alt="Images">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false">Can I track the progress of my project?</button>
-                <div id="faq-5" class="collapse" data-bs-parent="#faqOne">
-                  <div class="accordion-body faq-text">
-                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
-                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
-                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                <div class="team-item wow fadeInUp" data-wow-delay=".3s" data-src="assets/images/team/team-4-big.webp">
+                  <div class="team-item-inner">
+                    <div class="team-content">
+                      <h3 class="title"><a href="team-details.html">Darlene Robertson</a></h3>
+                      <span class="designation">Business Director</span>
+                    </div>
+                    <div class="social-links">
+                      <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                              class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i
+                              class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="team-link" href="team-details.html"><i class="tji-arrow-right-long"></i></a>
+                  </div>
+                  <div class="team-img-wrap">
+                    <div class="team-img">
+                      <img src="assets/images/team/team-4-big.webp" alt="Images">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1076,96 +1488,64 @@
         </div>
       </div>
     </section>
-    <!-- end: Faq Section -->
+    <!-- end: Team Section -->
 
-    <!-- start: Contact Section -->
-    <section class="tj-contact-section section-gap section-gap-x">
+ <!-- start: Working process Section -->
+    <div class="tj-working-process section-gap section-gap-x">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="global-map wow fadeInUp" data-wow-delay=".3s">
-              <div class="global-map-img">
-                <img src="assets/images/bg/map.svg" alt="Image">
-                <div class="location-indicator loc-1">
-                  <div class="location-tooltip">
-                    <span>Head office:</span>
-                    <p>993 Renner Burg, West Rond, MT 94251-030, USA.</p>
-                    <a href="tel:10095447818">P: +1 (009) 544-7818</a>
-                    <a href="mailto:support@bexon.com">M: support@bexon.com</a>
-                  </div>
+          <div class="col-12">
+            <div class="sec-heading-wrap">
+              <span class="sub-title wow fadeInUp" data-wow-delay=".3s">Our Process</span>
+              <div class="heading-wrap-content">
+                <div class="sec-heading style-2">
+                  <h2 class="sec-title text-anim">Seamless Process, Great <span>Results.</span></h2>
                 </div>
-                <div class="location-indicator loc-2">
-                  <div class="location-tooltip">
-                    <span>Regional office:</span>
-                    <p>Hessisch Lichtenau 37235, Kassel, Germany.</p>
-                    <a href="tel:10098801810">P: +1 (009) 880-1810</a>
-                    <a href="mailto:support@bexon.com">M: support@bexon.com</a>
-                  </div>
-                </div>
-                <div class="location-indicator loc-3">
-                  <div class="location-tooltip">
-                    <span>Regional office:</span>
-                    <p>32 Altamira, State of Pará, Brazil.</p>
-                    <a href="tel:10095447818">P: +1 (009) 544-7818</a>
-                    <a href="mailto:support@bexon.com">M: support@bexon.com</a>
-                  </div>
+                <p class="desc wow fadeInUp" data-wow-delay=".5s">Developing personalized customer journeys to increase
+                  satisfaction and loyalty.</p>
+                <div class="btn-wrap wow fadeInUp" data-wow-delay=".6s">
+                  <a class="tj-primary-btn" href="#">
+                    <span class="btn-text"><span>Request a Call</span></span>
+                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="contact-form style-2 wow fadeInUp" data-wow-delay=".4s">
-              <div class="sec-heading">
-                <span class="sub-title text-white"><i class="tji-box"></i>Get in Touch</span>
-                <h2 class="sec-title title-anim">Drop Us a <span>Line.</span></h2>
-              </div>
-              <form id="contact-form-2">
-                <div class="row wow fadeInUp" data-wow-delay=".5s">
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <input type="text" name="cfName2" placeholder="Full Name *">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <input type="email" name="cfEmail2" placeholder="Email Address *">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <input type="tel" name="cfPhone2" placeholder="Phone number *">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <div class="tj-nice-select-box">
-                        <div class="tj-select">
-                          <select name="cfSubject2">
-                            <option value="0">Chose a option</option>
-                            <option value="1">Business Strategy</option>
-                            <option value="2">Customer Experience</option>
-                            <option value="3">Sustainability and ESG</option>
-                            <option value="4">Training and Development</option>
-                            <option value="5">IT Support & Maintenance</option>
-                            <option value="6">Marketing Strategy</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="form-input message-input">
-                      <textarea name="cfMessage2" id="message" placeholder="Type message *"></textarea>
-                    </div>
-                  </div>
-                  <div class="submit-btn">
-                    <button class="tj-primary-btn" type="submit">
-                      <span class="btn-text"><span>Send Message</span></span>
-                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                    </button>
-                  </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="working-process-area">
+              <div class="process-item wow fadeInLeft" data-wow-delay=".5s">
+                <div class="process-step">
+                  <span>01</span>
                 </div>
-              </form>
+                <div class="process-content">
+                  <h4 class="title">Discovery & Planning</h4>
+                  <p class="desc">The first step in our process is understanding your unique business needs, objectives,
+                    and our cutomes challenges.</p>
+                </div>
+              </div>
+              <div class="process-item wow fadeInLeft" data-wow-delay=".7s">
+                <div class="process-step">
+                  <span>02</span>
+                </div>
+                <div class="process-content">
+                  <h4 class="title">Execution & Delivery</h4>
+                  <p class="desc">Once the plan is in place, our team moves forward with execution, turning strategies
+                    into actiony to deliver.</p>
+                </div>
+              </div>
+              <div class="process-item wow fadeInLeft" data-wow-delay=".9s">
+                <div class="process-step">
+                  <span>03</span>
+                </div>
+                <div class="process-content">
+                  <h4 class="title">Review & Support</h4>
+                  <p class="desc">After project completion, we conduct a thorough review to ensure everything aligns
+                    with your goals and requirements.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1176,47 +1556,25 @@
       <div class="bg-shape-2">
         <img src="assets/images/shape/pattern-3.svg" alt="">
       </div>
-    </section>
-    <!-- end: Contact Section -->
+    </div>
+    <!-- end: Working process Section -->
 
     <!-- start: Blog Section -->
-    <section class="tj-blog-section section-gap">
+    <section class="tj-blog-section-3 section-gap section-gap-x d-none">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="sec-heading text-center">
-              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Insights & Ideas</span>
-              <h2 class="sec-title title-anim">The Ultimate <span>Resource.</span></h2>
+            <div class="sec-heading style-3 text-center">
+              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Read Blogs</span>
+              <h2 class="sec-title title-anim">Strategies and Insights.</h2>
             </div>
           </div>
         </div>
         <div class="row row-gap-4">
-          <div class="col-xl-4 col-md-6">
-            <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item style-3 wow fadeInUp" data-wow-delay=".4s">
               <div class="blog-thumb">
-                <a href="blog-details.html"><img src="assets/images/blog/blog-1.webp" alt=""></a>
-                <div class="blog-date">
-                  <span class="date">28</span>
-                  <span class="month">Feb</span>
-                </div>
-              </div>
-              <div class="blog-content">
-                <div class="blog-meta">
-                  <span class="categories"><a href="blog-details.html">Business</a></span>
-                  <span>By <a href="blog-details.html">Ellinien Loma</a></span>
-                </div>
-                <h4 class="title"><a href="blog-details.html">Innovative Solutions for every Business Success.</a></h4>
-                <a class="text-btn" href="blog-details.html">
-                  <span class="btn-text"><span>Read More</span></span>
-                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6">
-            <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
-              <div class="blog-thumb">
-                <a href="blog-details.html"><img src="assets/images/blog/blog-2.webp" alt=""></a>
+                <a href="blog-details.html"><img src="assets/images/blog/blog-6.webp" alt=""></a>
                 <div class="blog-date">
                   <span class="date">28</span>
                   <span class="month">Feb</span>
@@ -1236,10 +1594,33 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-md-6">
-            <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item style-3 wow fadeInUp" data-wow-delay=".6s">
               <div class="blog-thumb">
-                <a href="blog-details.html"><img src="assets/images/blog/blog-3.webp" alt=""></a>
+                <a href="blog-details.html"><img src="assets/images/blog/blog-7.webp" alt=""></a>
+                <div class="blog-date">
+                  <span class="date">28</span>
+                  <span class="month">Feb</span>
+                </div>
+              </div>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <span class="categories"><a href="blog-details.html">Business</a></span>
+                  <span>By <a href="blog-details.html">Ellinien Loma</a></span>
+                </div>
+                <h4 class="title"><a href="blog-details.html">Harnessing Digital Transform a Roadmap Businesses.</a>
+                </h4>
+                <a class="text-btn" href="blog-details.html">
+                  <span class="btn-text"><span>Read More</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-item style-3 wow fadeInUp" data-wow-delay=".8s">
+              <div class="blog-thumb">
+                <a href="blog-details.html"><img src="assets/images/blog/blog-8.webp" alt=""></a>
                 <div class="blog-date">
                   <span class="date">28</span>
                   <span class="month">Feb</span>
@@ -1261,63 +1642,221 @@
           </div>
         </div>
       </div>
+      <div class="bg-shape-1">
+        <img src="assets/images/shape/pattern-2.svg" alt="">
+      </div>
+      <div class="bg-shape-2">
+        <img src="assets/images/shape/pattern-3.svg" alt="">
+      </div>
     </section>
     <!-- end: Blog Section -->
 
-    <!-- start: Cta Section -->
-    <section class="tj-cta-section">
+    <!-- start: Faq Section -->
+    <section class="tj-faq-section section-gap d-none">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="cta-area">
-              <div class="cta-content">
-                <h2 class="title title-anim">Let’s Build Future Together.</h2>
-                <div class="cta-btn wow fadeInUp" data-wow-delay=".6s">
-                  <a class="tj-primary-btn btn-dark" href="contact.html">
-                    <span class="btn-text"><span>Get Started Now</span></span>
-                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                  </a>
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <div class="faq-img-area wow fadeInLeft" data-wow-delay=".3s">
+              <div class="faq-img">
+                <img src="assets/images/about/contact-img.jpg" alt="">
+                <h2 class="title title-anim">Need Help? Start Here...</h2>
+              </div>
+              <div class="box-area">
+                <div class="call-box wow fadeInUp" data-wow-delay=".5s">
+                  <h4 class="title">Get Started Free Call? </h4>
+                  <span class="call-icon"><i class="tji-phone"></i></span>
+                  <a class="number" href="tel:+1-2345678910"><span>+1-2345678910</span></a>
                 </div>
               </div>
-              <div class="cta-img">
-                <img src="assets/images/cta/cta-bg.webp" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion tj-faq style-2" id="faqTwo">
+              <div class="accordion-item active wow fadeInUp" data-wow-delay=".3s">
+                <button class=" faq-title" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-1"
+                  aria-expanded="true">What services does Bexon offer to clients?</button>
+                <div id="faqTwo-1" class="collapse show" data-bs-parent="#faqTwo">
+                  <div class="accordion-body faq-text">
+                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
+                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
+                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-2"
+                  aria-expanded="false">How do I get started with Corporate Business?</button>
+                <div id="faqTwo-2" class="collapse" data-bs-parent="#faqTwo">
+                  <div class="accordion-body faq-text">
+                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
+                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
+                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-3"
+                  aria-expanded="false">How do you ensure the success of a project?</button>
+                <div id="faqTwo-3" class="collapse" data-bs-parent="#faqTwo">
+                  <div class="accordion-body faq-text">
+                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
+                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
+                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-4"
+                  aria-expanded="false">How long will it take to complete my project?</button>
+                <div id="faqTwo-4" class="collapse" data-bs-parent="#faqTwo">
+                  <div class="accordion-body faq-text">
+                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
+                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
+                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-5"
+                  aria-expanded="false">Can I track the progress of my project?</button>
+                <div id="faqTwo-5" class="collapse" data-bs-parent="#faqTwo">
+                  <div class="accordion-body faq-text">
+                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
+                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
+                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- end: Cta Section -->
-  </main>
+    <!-- end: Faq Section -->
 
-  <!-- start: Footer Section -->
-  <footer class="tj-footer-section footer-1 section-gap-x">
-    <div class="footer-main-area">
+       <!-- start: Contact Section -->
+    <section class="tj-contact-section h4-contact-section section-gap section-gap-x">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="footer-widget wow fadeInUp" data-wow-delay=".1s">
-              <div class="footer-logo">
-                <a href="index.html">
-                  <img src="assets/images/logos/logo.webp" alt="Logos">
-                </a>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-form style-3 wow fadeInUp" data-wow-delay=".4s">
+              <div class="sec-heading style-4">
+                <span class="sub-title"><i class="tji-box"></i>Get in Touch</span>
+                <h2 class="sec-title title-anim">Lets Connect.</h2>
               </div>
-              <div class="footer-text">
-                <p>Developing personalze our customer journeys to increase satisfaction & loyalty of our expansion.
-                </p>
-              </div>
-              <div class="award-logo-area">
-                <div class="award-logo">
-                  <img src="assets/images/footer/award-logo-1.webp" alt="">
+              <form id="contact-form-3">
+                <div class="row wow fadeInUp" data-wow-delay=".5s">
+                  <div class="col-sm-6">
+                    <div class="form-input">
+                      <label class="cf-label">Full Name *</label>
+                      <input type="text" name="cfName3">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-input">
+                      <label class="cf-label">Email Address *</label>
+                      <input type="email" name="cfEmail3">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-input">
+                      <label class="cf-label">Phone number *</label>
+                      <input type="tel" name="cfPhone3">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-input">
+                      <div class="tj-nice-select-box">
+                        <div class="tj-select">
+                          <label class="cf-label">Chose a option</label>
+                          <select name="cfSubject3">
+                            <option value="1">Business Strategy</option>
+                            <option value="2">Customer Experience</option>
+                            <option value="3">Sustainability and ESG</option>
+                            <option value="4">Training and Development</option>
+                            <option value="5">IT Support & Maintenance</option>
+                            <option value="6">Marketing Strategy</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-input message-input">
+                      <label class="cf-label">Message here... *</label>
+                      <textarea name="cfMessage3" id="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="submit-btn">
+                    <button class="tj-primary-btn" type="submit">
+                      <span class="btn-text"><span>Submit Now</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </button>
+                  </div>
                 </div>
-                <div class="award-logo">
-                  <img src="assets/images/footer/award-logo-2.webp" alt="">
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="faq-img-area wow fadeInLeft" data-wow-delay=".3s">
+              <div class="faq-img">
+                <img src="assets/images/about/contact-img.jpg" alt="">
+                <h2 class="title title-anim">Need Help? Start Here...</h2>
+              </div>
+              <div class="box-area">
+                <div class="call-box wow fadeInUp" data-wow-delay=".5s">
+                  <h4 class="title">Get Started Free Call? </h4>
+                  <span class="call-icon"><i class="tji-phone"></i></span>
+                  <a class="number" href="tel:+1-2345678910"><span>+1-2345678910</span></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="footer-widget widget-nav-menu wow fadeInUp" data-wow-delay=".3s">
+        </div>
+      </div>
+      <div class="bg-shape-1">
+        <img src="assets/images/shape/pattern-2.svg" alt="">
+      </div>
+      <div class="bg-shape-2">
+        <img src="assets/images/shape/pattern-3.svg" alt="">
+      </div>
+    </section>
+    <!-- end: Contact Section -->
+
+
+  </main>
+
+  <!-- start: Footer Section -->
+  <footer class="tj-footer-section footer-3 section-gap-x">
+    <div class="footer-main-area">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-3 col-md-6">
+            <div class="footer-widget footer-col-1 wow fadeInUp" data-wow-delay=".1s">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <img src="assets/images/logo2.png" alt="Logos" style="border-radius: 12px;">
+                </a>
+              </div>
+              <div class="footer-text">
+                <p>At Scotforth Connection International, we tailor every connection to the individual—building trust, increasing satisfaction, and encouraging lasting, collaborative relationships.
+                </p>
+              </div>
+              <div class="social-links style-3">
+                <ul>
+                  <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                  <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="footer-widget footer-col-2 widget-nav-menu wow fadeInUp" data-wow-delay=".3s">
               <h5 class="title">Services</h5>
               <ul>
                 <li><a href="#">Customer Experience</a></li>
@@ -1329,8 +1868,8 @@
               </ul>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="footer-widget widget-nav-menu wow fadeInUp" data-wow-delay=".5s">
+          <div class="col-xl-3 col-md-6">
+            <div class="footer-widget footer-col-3 widget-nav-menu wow fadeInUp" data-wow-delay=".5s">
               <h5 class="title">Resources</h5>
               <ul>
                 <li><a href="#">Contact us</a></li>
@@ -1342,8 +1881,41 @@
               </ul>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
-            <div class="footer-widget widget-subscribe wow fadeInUp" data-wow-delay=".7s">
+          <div class="col-xl-3 col-md-6">
+            <div class="footer-widget widget-contact wow fadeInUp" data-wow-delay=".7s">
+              <h5 class="title">Our Office</h5>
+              <div class="footer-contact-info">
+                <div class="contact-item">
+                  <span>Your Location....</span>
+                </div>
+                <div class="contact-item">
+                  <a href="tel:12345678910">P: +1-2345678910</a>
+                  <a href="mailto:support@example.com">M: support@example.com</a>
+                </div>
+                <!-- <div class="contact-item">
+                  <span><i class="tji-clock"></i> Mon-Fri 10am-10pm</span>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-lg-3">
+            <div class="award-logo-area wow fadeInUp" data-wow-delay=".3s">
+              <div class="award-logo">
+                <img src="assets/images/footer/award-logo-white-1.webp" alt="">
+              </div>
+              <div class="award-logo">
+                <img src="assets/images/footer/award-logo-white-2.webp" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="footer-widget widget-subscribe-2 wow fadeInUp" data-wow-delay=".5s">
               <h3 class="title">Subscribe to Our Newsletter.</h3>
               <div class="subscribe-form">
                 <form action="#">
@@ -1358,41 +1930,14 @@
         </div>
       </div>
     </div>
-    <div class="tj-copyright-area">
+    <div class="tj-copyright-area-3">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="copyright-content-area">
-              <div class="footer-contact">
-                <ul>
-                  <li>
-                    <a href="tel:10095447818">
-                      <span class="icon"><i class="tji-phone-2"></i></span>
-                      <span class="text">+1 (009) 544-7818</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@bexon.com">
-                      <span class="icon"><i class="tji-envelop-2"></i></span>
-                      <span class="text">info@bexon.com</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="social-links">
-                <ul>
-                  <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                  </li>
-                  <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                  <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                </ul>
-              </div>
               <div class="copyright-text">
-                <p>&copy; 2025 <a href="https://themeforest.net/user/theme-junction/portfolio" target="_blank">Bexon</a>
-                  All right reserved</p>
+                <p>© 2025 All Rights Reserved By | Designed By  <a href="https://thevisionbrands.com/" target="_blank">The Vision Brands</a>
+                  </p>
               </div>
             </div>
           </div>
@@ -1411,11 +1956,13 @@
   <!-- JS here -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+
   <script src="assets/js/gsap.min.js"></script>
   <script src="assets/js/gsap-scroll-to-plugin.min.js"></script>
   <script src="assets/js/gsap-scroll-trigger.min.js"></script>
   <script src="assets/js/gsap-split-text.min.js"></script>
   <script src="assets/js/smooth-scroll.min.js"></script>
+
   <script src="assets/js/jquery.nice-select.min.js"></script>
   <script src="assets/js/swiper.min.js"></script>
   <script src="assets/js/odometer.min.js"></script>
